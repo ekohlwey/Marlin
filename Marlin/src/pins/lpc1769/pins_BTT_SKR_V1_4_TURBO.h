@@ -28,3 +28,9 @@
 // Include SKR 1.4 pins
 //
 #include "../lpc1768/pins_BTT_SKR_V1_4.h"
+
+#undef FAN_PIN
+
+#define SPINDLE_LASER_ENA_PIN P1_26   // digital pin (EODET)
+#define SPINDLE_LASER_PWM_PIN    P2_03   // digital pin - MUST BE HARDWARE PWM (FAN0)
+#define COOLANT_MIST_PIN P2_07 //HE0
